@@ -61,7 +61,7 @@ header{
 /* Galeria CTA */
 .galeria{
     text-align: center;
-    margin: 24px;
+    margin: 0;
     padding: 24px 0;
 }
 .cta{
