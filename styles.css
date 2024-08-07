@@ -50,7 +50,7 @@ p, li{
     padding: 1.5rem;
     border-radius: 1rem;
 }
-.boton-principal a{
+a{
     color: var(--color-blanco);
     font-family: "Roboto", sans-serif;
     text-decoration: none;
