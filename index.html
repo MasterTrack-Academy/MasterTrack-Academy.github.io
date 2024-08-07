@@ -3,427 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>MasterTrack - Academia de Producción Musical</title>
-    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MasterTrack</title>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo">
-    </header>
-    <main>
-        <div class="conteiner">
-            <div class="galeria"><!--Video e imagenes detalladas en documentacion principal-->
-                <h1>Transforma tu Pasión en una Carrera Musical Exitosa</h1>
-                <h2>Empieza Desde Casa y Aprende de los Mejores Productores</h2>
-                <video id="video" src="vid/presentacion.mp4" alt="presentacion.mp4" controls></video>
-                <a href="https://go.hotmart.com/O93524895M?ap=5eee" class="cta">Empezar Ahora</a>
-            </div>
-            <style>
-                #contenidoExtra {
-                  display: none;
-                }
-              </style>
-
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var video = document.getElementById('video');
-    
-                    var tiempoMostrar = 20; // tiempo en el que se mostrará la pagina
-
-                    video.addEventListener('timeupdate', function() {
-                        if (video.currentTime >= tiempoMostrar) {
-                        contenidoExtra.style.display = 'block';
-                        }
-                    });
-                });
-            </script>
-
-            <div id="contenidoExtra">
-                <div class="beneficios">
-                    <h2>¿Cómo transformará este curso tu carrera musical?</h2>
-                    <div class="beneficios__conteiner">
-                        <div class="beneficio">
-                            <img src="img/proceso-cerebral.png" alt="beneficio1">
-                            <h3>Enfoque Práctico y Realista</h3>
-                            <p>Aprende técnicas y herramientas que se usan en la industria musical actual. Cada lección está diseñada para ser aplicada directamente a tus proyectos.</p>
-                        </div>
-                        <div class="beneficio">
-                            <img src="img/estado-de-resultados.png" alt="beneficio2">
-                            <h3>Resultados Tangibles</h3>
-                            <p>Al finalizar el curso, tendrás varias pistas completas y producciones que podrás utilizar para promover tu carrera musical.</p>
-                        </div>
-                        <div class="beneficio">
-                            <img src="img/certificado.png" alt="beneficio3">
-                            <h3>Certificación y Reconocimiento</h3>
-                            <p>Obtén un certificado de finalización que avala tus habilidades y conocimientos adquiridos, dándote una ventaja competitiva en la industria musical.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="artistas">
-                    <div class="separador"></div>
-                    <h2>Testimonios de artistas</h2>
-                    <div class="artistas__conteiner">
-                        <video src="vid/Dtrova.mp4" controls></video>
-                        <video src="vid/Niche.mp4" controls></video>
-                        <video src="vid/Luis.mp4" controls></video>
-                        <video src="vid/Athenea.mp4" controls></video>
-                    </div>
-                </div>  
-                
-                <div class="preguntas">
-                    <h2>Analiza estas preguntas, <br>
-                        ¿Te identificas con alguna?</h2>
-                    <div class="preguntas__conteiner">
-                        <div class="pregunta">
-                            <p>¿Tienes un grupo o crew que disfrutan de <b>hacer música</b>? ¿Creen que pueden <b>mejorar significativamente</b> la calidad de sus creaciones, simplemente aprendiendo <b>nuevas técnicas y habilidades</b> de producción musical?</p>
-                        </div>
-                        <div class="pregunta">
-                            <p>¿Haces música por <b>amor</b> a la misma y por <b>autosuperación</b>? ¿Buscas perfeccionar tus producciones y quieres un curso que te aporte <b>valor real y tangible</b>?</p>
-                        </div>
-                        <div class="pregunta">
-                            <p>¿Quieres <b>hacer de esto un trabajo</b>, tener una buena imagen ante tu publico con buenas producciones y un <b>certificado</b> que avale tus conocimientos? ¿Tienes o buscas tener un estudio propio para producir por una <b>remuneración</b> o <b>colaborar con grandes artistas</b>?</p>
-                        </div>
-                        <div class="pregunta">
-                            <p>¿Buscas un curso <b>flexible</b> y 100% online que se adapte a <b>tu agenda ocupada</b> para perfeccionar tus habilidades y adquirir nuevas, para asi <b>ampliar tu repertorio</b> profesional?</p>
-                        </div>
-                    </div>
-                    <h3>¿Si?<br>
-                        ¡Entonces este curso es para ti!
-                    </h3>
-                    <div class="separador"></div>
-                    
-                    <a href="https://go.hotmart.com/O93524895M?ap=5eee" class="cta">Empezar Ahora</a>
-                    <div class="separador"></div>
-                    <div class="separador"></div>
-                </div>
-
-                <h2>¿Que Obtendrás con tu Compra?</h2>
-                <div class="estructuraCurso">
-                    
-                    <div class="bloque">
-                        <img src="img/acceso.jpg" alt="imagen representativa">
-                        <h2>Domina la Composición</h2>
-                        <h3>De la Idea a la Grabación Profesional</h3>
-                        <div class="bloque__ver" id="composicionBloque">
-                            <p>Ver Contenido</p>
-                        </div>
-                        <div class="contenido composicion">
-                            <div class="contenido__individual">
-                                <p>Introducción</p>
-                            </div>
-                              <div class="contenido__individual">
-                                <p>Partiendo de una idea</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Cultura Musical Básica</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>DAW: Primeros pasos</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Preparando el campo de trabajo</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Nuestro primer proyecto</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Grabando Audio de distintas fuentes</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Editando Audio</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Exportando Audio</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Importando Midi</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Grabando Midi</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Exportando Midi</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Melodías y Más</p>
-                              </div>
-                        </div>
-                        <p class="precioIndividual">Precio Individial: $47usd</p>  
-                      </div>
-                    
-                      <div class="bloque" >
-                        <img src="img/acceso.jpg" alt="imagen representativa">
-                        <h2>Transforma tu Sonido</h2>
-                        <h3>Técnicas Avanzadas de Mezcla Profesional</h3>
-                        <div class="bloque__ver" id="mezclaBloque">
-                            <p>Ver Contenido</p>
-                        </div>
-                        <div class="contenido mezcla">
-                            <div class="contenido__individual">
-                                <p>Introducción</p>
-                            </div>
-                              <div class="contenido__individual">
-                                <p>Comenzando con la mezcla</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Forma correcta de organizar</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Solución de problemas de la grabación</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Pistas y Características</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Cadena de efectos insertos</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Ecualización y sus tipos </p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Ecualizadores y aplicaciones</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Rango Sonoro</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Compresión y sus tipos</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Tipos de compresores</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Configuración CLAVE + Anexo</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Compresión Multibanda Mezcla</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Mezcla de cada Instrumento</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Efectos y más!</p>
-                              </div>
-                        </div>
-                        <p class="precioIndividual">Precio Individial: $75usd</p>
-                      </div>
-                    
-                      <div class="bloque" >
-                        <img src="img/acceso.jpg" alt="imagen representativa">
-                        <h2>Lleva tu Música al Máximo</h2>
-                        <h3>Secretos de la Masterización Profesional</h3>
-                        <div class="bloque__ver" id="masterBloque">
-                            <p>Ver Contenido</p>
-                        </div>
-                        <div class="contenido master">
-                            <div class="contenido__individual">
-                                <p>Introducción</p>
-                            </div>
-                              <div class="contenido__individual">
-                                <p>Comenzando con la masterización</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Instrumentos de Medición</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Cadena de Procesos</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Ecualizadores para Mastering</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Compresión Multibanda Mastering</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Color y Calor</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Imagen Stereo</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Plugins y Configs</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>Secretos de compresión</p>
-                              </div>
-                              <div class="contenido__individual">
-                                <p>5 configuraciones finales CLAVE y OBLIGATORIAS para cerrar una masterización perfecta</p>
-                              </div>
-                        </div>
-                        <p class="precioIndividual">Precio Individial: $75usd</p>
-                      </div>
-                </div>
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                      var bloques = document.querySelectorAll('.bloque');
-                
-                      bloques.forEach(function(bloque) {
-                        bloque.addEventListener('click', function() {
-                          var contenido = this.querySelector('.contenido');
-                          if (contenido.style.display === 'none' || contenido.style.display === '') {
-                            contenido.style.display = 'block';
-                          } else {
-                            contenido.style.display = 'none';
-                          }
-                        });
-                      });
-                    });
-                  </script>
-
-                <div class="empiezaHoy">
-                    <h2>¡Comienza a Producir Hoy!</h2>
-                    <h3>¡Inscríbete ahora y empieza a crear tus propias canciones de inmediato!</h3>
-                    <a href="https://go.hotmart.com/O93524895M?ap=5eee" class="cta-descuento">
-                        <h3>¡Quiero Empezar Ahora!</h3>
-                        <p class="cta-subtext">Conviertete en un profesional por solo $97usd</p>
-                    </a>
-                </div>
-
-                
-
-                <div class="info-iconos"><!--Seccion con iconos e info relevante-->
-                    <div class="info-iconos__bloque">
-                        <img src="img/tiempo-restante.png" alt="icono1"> 
-                        <p>Cupos Limitados</p>
-                    </div>
-                    <div class="info-iconos__bloque">
-                        <img src="img/grupo.png" alt="icono2"> 
-                        <p>+400 Estudiantes</p>
-                    </div>
-                    <div class="info-iconos__bloque">
-                        <img src="img/signo-de-dolar.png" alt="icono3"> 
-                        <p>Pago Único</p>
-                    </div>
-                    <div class="info-iconos__bloque">
-                        <img src="img/empresario.png" alt="icono4">
-                        <p>Marcelo Luz Fernandez</p>
-                    </div>
-                </div>
+    <header><img src="img/logo.png" alt="logo MasterTrack"></header>
 
 
-                <!--aca viene la seccion de bonos makups-->
+<!-- PAGINA PRINCIPAL-->
 
-                <div class="testimonios">
-                    <h2> Palabras de nuestros alumnos </h2>
-                    <div class="testimonios__conteiner">
-                        
-                    <div class="testimonio">
-                        <img src="img/Mateo.jpeg" alt="">
-                        <h3>Mateo, Argentina</h3>
-                        <p>La verdad es que siempre me gustó la música, es mi pasión... Sin embargo solo con pasión no se puede avanzar en la carrera.
-                            Mi deseo de vivir de la músico me llevó a conocer a Marcelo y su curso de producción musical es directo, sin rodeos, muy práctico y realmente se aprende.              
-                            Hoy tengo más de 15 canciones creadas y producidas íntegramente por mí y ya estoy ganando dinero vendiéndolas de la forma en que nos indica dentro del curso!
-                            Recomiendo este curso a todo aquel que quiera vivir de su propia música sin tener que invertir fortunas para lograrlo!
-                            Por cierto... increíble la cantidad de contenido. Este curso debería costar más de 10 veces lo que cuesta. Gracias!!!</p>
-                    </div>
-                    <div class="testimonio">
-                        <img src="img/Santiago.jpeg" alt="">
-                        <h3>Santiago, Uruguay</h3>
-                        <p>"Marcelo no solo ya es un artista consagrado sino que también es un excelente profesor. Desde el minuto uno de haber entrado al curso, le he hecho pregunta tras pregunta y me ha contestado todas con lujo de detalle.
-                        Soy amateur (toco el piano), sin embargo, siempre me interesó saber cómo hacer para producir totalmente mi música sin depender de la contratación de un productor.
-                        El curso de Marcelo es por lejos muy superior otros cursos que he realizado anteriormente y la verdad, es con el único curso que he aprendido lo que hay que hacer paso a paso hasta llegar al final.
-                        Lo mejor de todo es el soporte, apoyo y los constantes agregados de nuevas clases y módulos! 
-                        Si estas pensando si este curso te ayudará a comenzar tu carrera de producción musical, desde ya te confirmo que sí! 
-                        No lo dudes, te gustará lo que ves del otro lado. CONFIRMADO!"</p>
-                    </div>
-                    <div class="testimonio">
-                        <img src="img/guadalupe.jpeg" alt="">
-                        <h3>Guadalupe, México</h3>
-                        <p>
-                            "Comencé a cantar desde muy pequeña y tengo muchísimas grabaciones de cientos de canciones que he cantado. 
-                            Conocí a Marcelo en un show que dió con su grupo Sweet en Berlin (las cosas del destino digo yo)... Enseguida nos contactamos para que me produzca 12 de mis canciones y así poder comercializarlas.  El resultado ha sido mejor de lo esperado y hoy años después, Marcelo ha puesto en un práctico curso toda su experiencia para que todos sepamos cómo hacer nuestras producciones Desde la A a la Z.
-                            Ya paso por las tres etapas de producción con cada una de mis realizaciones y eso se traduce en ahorro de dinero, velocidad en mis creaciones y lo mejor, el soporte de un amigo en el mundo de la música!
-                            Que si lo recomiendo? CLARO!! Ningún curso te enseñará tanto, y aprenderás cada paso muy rápido..."</p>
-                    </div>
-                    <div class="testimonio">
-                        <img src="img/luis.jpeg" alt="">
-                        <h3>Luis, Colombia</h3>
-                        <p>"Si me decían que en menos de 15 días podría grabar mis composiciones, mezclar y masterizar como un pro, no lo hubiera creído...
-                        Es sorprendente todo lo que se aprende en este curso y cómo, lo que me parecía chino básico, hoy me resulta fácil de entender y de aplicar. 
-                        En otros tiempos he gastado miles de dólares en otras capacitaciones y quiero agradecer públicamente a Marcelo, ya que su curso ha sido el único con el que realmente aprendí, y pude sacar adelante mi proyecto de vivir de la música que hago. 
-                        Si estas comenzando o si ya tienes algo de experiencia produciendo tus propios proyectos, sin dudas este curso es para tí. 
-                        Ah! y no quiero dejar de agradecer todos los recursos que nos compartes para que podamos avanzar y monetizar rápidamente!  Gracias totales!"</p>
-                    </div>
-                    </div>
-                </div>
-
-
-                <div class="garantia">
-                    <img src="img/garantia.png" alt="">
-                    <p> Estoy convencido que esta capacitación transformará tu desarrollo hacia una producción de nivel profesional.
-                        Aún así, si sientes que esto no es para tí, o prefieres dejar la producción de tu música en manos de terceros,  <br>
-                        <b>Cuentas con 7 días de garantía de devolución</b> <br>
-                        Si no estas 100% satisfech@ sea por lo que fuere, contáctanos y mi equipo estará ahí 24/7 para atender tu solicitud
-                        y realizar el reembolso inmediato de tu inversión. Sin preguntas, sin demoras...
-                    </p>
-                </div>
-
-
-                <div class="profesor">
-                    <h2>Marcelo Luz Fernandez</h2>
-                    <p>Nos complace presentar al instructor de nuestro curso de producción musical. Con más de 15 años de experiencia en la industria, Marcelo ha trabajado con artistas y bandas de renombre, participando en la producción de álbumes aclamados por la crítica. Su sólida formación académica y su pasión por la enseñanza lo convierten en el guía ideal para este curso, donde combinará teoría y práctica de manera efectiva. Adaptándose a las necesidades individuales de cada estudiante.</p>
-                    <img src="img/profe.jpg" alt="">
-                </div>
-
-
-                <div class="separador"></div>
-                <div class="faq-container">
-                    <h2>Preguntas Frecuentes</h2>
-                    <div class="faq">
-                        <div class="faq-question">¿Que es lo que recibiré una vez que ingrese al programa?</div>
-                        <div class="faq-answer">
-                            Recibirás el acceso de por vida a un curso en video con mas de 70 videos y guías en formato digital PDF complementarias que puedes tener en tu computador de escritorio, portátil, celular, teléfono móvil o tableta.
-                            Para acceder al curso podrás hacerlo desde cualquier dispositivo incluso si no tienes conexión a internet.
-                        </div>
-                    </div>
-                    <div class="faq">
-                        <div class="faq-question">Nunca he comprado por internet. ¿Es seguro mi pago?</div>
-                        <div class="faq-answer">
-                            La empresa procesadora de las órdenes es Hotmart uno de los mayores y más seguros procesadores de pagos online a nivel mundial, puedes estar confiado/a de que tu orden e información está 100% segura y encriptada. El sitio cuenta con certificado SSL de seguridad.</div>
-                    </div>
-                    <div class="faq">
-                        <div class="faq-question">¿Soy Amateur, no soy profesional ¿me sirve este curso?</div>
-                        <div class="faq-answer">He realizado este curso de manera tal que cualquier persona pueda seguirlo fácilmente sin la necesidad de experiencia previa. Por supuesto que te servirá y notarás avances muy rápido!!</div>
-                    </div>
-                    <div class="faq">
-                        <div class="faq-question">Solo tengo un celular, ¿Puedo realizar el curso?</div>
-                        <div class="faq-answer">La respuesta es SI. podrás ver todo el curso en cualquier dispositivo ya sea tablet, celular, computadora o incluso en TV. Lo que sí debes saber es que para practicar necesitas sí o sí una computadora / ordenador en el que puedas aplicar lo aprendido en las lecciones. Puede ser de mesa o laptop, windows o Mac.</div>
-                    </div>
-                    <div class="faq">
-                        <div class="faq-question">No tengo Instrumentos, ¿Puedo hacer el curso igual?</div>
-                        <div class="faq-answer">No es necesario que tengas instrumentos para realizar las clases ya que te explico todo lo que necesitas y me verás a mi tocando para grabar las pistas. Si no tienes instrumentos, para eso existen los instrumentos virtuales que te enseño a disparar para que armes tus pistas de audio nivel PRO.</div>
-                    </div>
-                </div>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        var questions = document.querySelectorAll('.faq-question');
-                        questions.forEach(function(question) {
-                            question.addEventListener('click', function() {
-                                var answer = this.nextElementSibling;
-                                if (answer.style.display === "block") {
-                                    answer.style.display = "none";
-                                } else {
-                                    answer.style.display = "block";
-                                }
-                            });
-                        });
-                    });
-                </script>
-            </div>
+    <main class="background-section">
+        <div class="contenedor main">
+            <h1>Accede al Entrenamiento 2.0, <br> aprende a producir música de verdad.</h1>
+            <p>¿Listo para entender de manera clara la producción musical? <b> Contáctate con nuestro soporte</b> para recibir atención personalizada y 
+            accede a nuestro entrenamiento exclusivo.</p>
+            <div class="boton-principal"><a href="https://go.hotmart.com/X94303272B?ap=1a78">Adquiera el entrenamiento ahora</a></div>
+            <div class="boton-secundario"><a href="#contenido">¿Qué voy a aprender?</a></div>
+            <a class="enlace" href="#precios">Ver precios y otros entrenamientos</a>
+        </div> 
     </main>
-    <footer>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Curso de Producción Musical. Todos los derechos reservados.</p>
+    <div class="video">
+        <video id="video" src="vid/presentacion.mp4" alt="presentacion.mp4" controls></video>
+    </div>
+
+
+<!--CONTENIDO DEL ENTRENAMIENTO - ¿QUÉ APRENDERÁ AL FINALIZAR EL ENTRENAMIENTO?-->
+
+    <section class="contenido contenedor" id="contenido">
+        <h2>Contenido del Entrenamiento Avanzado 2.0</h2>
+        <div class="navegacion">
+            <div class="boton-secundario"><a href="#CYP">Fundamentos y Teoría Musical</a></div>
+            <div class="boton-secundario"><a href="#CYP">Creación y Producción</a></div>
+            <div class="boton-secundario"><a href="#DAP">Desarrollo y Acompañamiento Profesional</a></div>
+            <div class="boton-secundario"><a href="#FYC">Flexibilidad y Comunidad</a></div>
+            <div class="boton-secundario"><a href="#EHS">Equipos y Home Studio</a></div>
+            <div class="boton-secundario"><a href="#SYA">Satisfacción y Avance</a></div>
         </div>
-    </footer>
-    <a href="https://wa.me/+543764156020?text=Hola%20quiero%20más%20información%20sobre%20el%20curso%20de%20producción%20musical" class="whatsapp-button" target="_blank">
-        <img src="img/whatsapp.png" alt="WhatsApp" style="width: 70px; height: 70px;">
-    </a>
+        <div class="bloques-contenido" id="FTM">
+            <h3>Fundamentos y Teoría Musical:</h3>
+            <ul>
+                <li>Fundamentos de Producción Musical: Aprenderás los fundamentos necesarios para entrar en el mundo de la producción musical.</li>    
+                <li>Teoría Musical y Composición: Aprenderás los fundamentos de la teoría musical y la composición.</li>
+            </ul>
+                
+        </div>
+        <div class="bloques-contenido" id="CYP">
+            <h3>Creación y Producción</h3>
+                <ul>
+                    <li>
+                        Creación de Proyectos Musicales: Tendrás la capacidad de crear tus propias maquetas, demos, EPs y covers y compartirlos en tus redes sociales y plataformas de streaming.</li>
+                    <li>
+                        Instrumentos Virtuales: Aprenderás el poder de los instrumentos virtuales y cómo usarlos para mejorar tu producción.</li>
+                    <li>
+                        Técnica de Grabación: Aprenderás la importancia de una buena técnica de grabación de cualquier fuente sonora, como instrumentos o tu propia voz.</li>
+                    <li>
+                        Mezcla y Masterización: Aprenderás los fundamentos básicos de la etapa de mezcla y qué es y qué no es la masterización, así como cómo darle potencia a tu producto final con herramientas de ARTURIA.</li>
+                </ul>
+        </div>
+        <div class="bloques-contenido" id="DAP">
+            <h3>Desarrollo y Acompañamiento Profesional</h3>
+            <ul>
+                <li>
+                    Presentación Profesional: Tendrás la oportunidad de presentar tu mejor trabajo a productores profesionales.</li>
+            </ul>
+        </div>
+        <div class="bloques-contenido" id="FYC">
+            <h3>Flexibilidad y Comunidad</h3>
+            <ul>
+                <li>
+                    Flexibilidad Horaria: Podrás trabajar en tu propio horario, desde la comodidad de tu hogar.</li>
+                <li>
+                    Comunidad de Aprendizaje: Nuestra academia tiene una gran comunidad de alumnos y profesores dispuestos a ayudarte en tu camino de aprendizaje.</li>
+            </ul>
+        </div>
+        <div class="bloques-contenido" id="EHS">
+            <h3>Equipos y Home Studio</h3>
+            <ul>
+                <li>
+                    Equipos Necesarios: Aprenderás sobre los equipos necesarios para producir tu música y su papel en el proceso.</li>
+                <li>
+                    Construcción de Home Studio: Te enseñaremos a construir tu home studio con el menor costo de equipos en el mercado.</li>
+            </ul>
+        </div>
+        <div class="bloques-contenido" id="SYA">
+            <h3>Satisfacción y Avance</h3>
+            <ul>
+                <li>
+                    Satisfacción Personal: Tendrás la satisfacción de obtener música producida por ti mismo.</li>
+                <li>
+                    Programa Completo y Práctico: Ofrecemos un programa completo y práctico, que te permitirá avanzar en tu carrera como productor musical de manera efectiva.</li>
+            </ul>
+        </div>
+    </section>
+
+
+<!--PROFESORES RESPONSABLES -->
+
+    <section class="profesionales contenedor">
+        <div class="bloques-profes">
+            <div class="icono">
+                <img src="/img/profesional.png" alt="">
+            </div>
+            <div class="profesionales-titulo">
+                <h2>Profesionales Calificados</h2>
+            </div>
+            <div class="profesionales-calificados">
+                <p>En nuestra academia online de producción musical, contamos con un equipo de profesionales dedicados y altamente calificados para guiarte 
+                    en tu camino hacia el dominio de la producción musical. Queremos que conozcas a los maestros que estarán a tu lado en cada paso del proceso.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="bloques-profes">
+            <div class="icono">
+                <img src="/img/certificacion.png" alt="">
+            <div class="profesionales-titulo">
+                <h2>Certificación Profesional</h2>
+            </div>
+            <div class="profesionales-calificados">
+                
+                <p>Al culminar el Entrenamiento 2.0 de 12 meses, recibirás una certificación, que valida tus  habilidades y conocimientos adquiridos durante 
+                    el curso. Esta certificación no solo es un reconocimiento a tu dedicación y esfuerzo, sino también una herramienta valiosa que te abrirá 
+                    puertas en la industria musical.
+                </p>
+            </div>
+            
+            </div>
+        </div>
+        
+        <!--    
+        <div class="bloques-profes">
+            <img src="img/LeonardoRoa.webp" alt="Perfil del profesional">
+            <h3>Leonardo Roa</h3>
+            <p>Más de 25 años de experiencia en la formación de artistas en el área de la producción musical,dj, sonido en vivo, locución e interpretación de multi-instrumentos.</p>
+        </div>
+        <div class="bloques-profes">
+            <img src="img/MaxDonato.webp" alt="Perfil del profesional">
+            <h3>Max Donato</h3>
+            <p>Más de 15 años en la industria, trabajando con artistas de renombre internacional. Con una sólida formación como músico, compositor y técnico de grabación.</p>
+        </div>
+        <div class="bloques-profes">
+            <img src="img/SantiagoBarboza.webp" alt="Perfil del profesional">
+            <h3>Santiago Barboza</h3>
+            <p>Músico, compositor y productor musical apasionado. Experto en grabación, mezcla y masterización, dedicado a pulir cada detalle sonoro.</p>
+        </div>-->
+    </section>
+
+
+<!--PRECIOS - 3 OPCIONES-->
+
+    <section class="precios contenedor" id="precios">
+        <h2>Precios y Entrenamientos</h2>
+        <div class="bloques-precios">
+            <div class="encabezado-bloque">
+                <h2>Membresía Premium</h2>
+                <p>6 horas semanales</p>
+            </div>
+            <p class="precio">$69<span>USD/Mes</span></p>
+            <ul>
+                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
+                <hr>
+                <li>2 horas en vivo Sala de Juntas.</li>
+                <hr>
+                <li>2 horas en vivo Mentoría escucha de proyectos.</li>
+                <hr>
+                <li>2 horas de CIRCULO INTERNO realizando tu Ep.</li>
+                <hr>
+                <li>Acceso a todo el contenido del entrenamiento Avanzado 2.0</li>
+                <hr>
+                <li>Curso en directo de la temporada lectiva con Certificación a los 12 meses.</li>
+                <hr>
+                <li>Publica tus canciones en nuestros sello Discográficos con nuestra tutoria.</li>
+                <hr>
+                <li>Soporte a dudas de lecciones y en los directos.</li>
+                <hr>
+                <li>Descarga de librerías de Sonido Diseñadas por nosotros.</li>
+                <hr>
+                <li>Descarga de Canciones de nuestros Productores.</li>
+                <hr>
+                <li>Certificación Digital al culminar el entrenamiento a los 12 meses.</li>
+            </ul>
+            <div class="boton-principal boton-adquirir"><a href="https://go.hotmart.com/X94303272B?ap=1a78">Adquirir</a></div>
+        </div>
+        <div class="bloques-precios">
+            <div class="encabezado-bloque">
+                <h2>Membresía Standar</h2>
+                <p>4 horas semanales</p>
+            </div>
+            <p class="precio">$44<span>USD/Mes</span></p>
+            <ul>
+                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
+                <hr>
+                <li>2 horas en vivo Mentoría escucha de proyectos.</li>
+                <hr>
+                <li>2 horas de CIRCULO INTERNO realizando tu Ep.</li>
+                <hr>
+                <li>Acceso a todo el contenido del entrenamiento Avanzado 2.0</li>
+                <hr>
+                <li>Soporte a dudas de lecciones y en los directos.</li>
+                <hr>
+                <li>Descarga de librerías de Sonido Diseñadas por nosotros.</li>
+                <hr>
+                <li>Descarga de Canciones de nuestros Productores.</li>
+                <hr>
+                <li>Certificación Digital al culminar los 12 meses.</li>
+            </ul>
+            <div class="boton-principal boton-adquirir"><a href="https://go.hotmart.com/X94303272B?ap=7433">Adquirir</a></div>
+        </div>
+        <div class="bloques-precios">
+            <div class="encabezado-bloque">
+                <h2>Membresía Básica</h2>
+                <p>2 horas semanales</p>
+            </div>
+            <p class="precio">$19<span>USD/Mes</span></p>
+            <ul>
+                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
+                <hr>
+                <li>2 horas de CIRCULO INTERNO realizando tu Ep.</li>
+                <hr>
+                <li>Acceso a todo el contenido del entrenamiento Avanzado 2.0</li>
+                <hr>
+                <li>Soporte a dudas de lecciones y en los directos.</li>
+                <hr>
+                <li>Descarga de librerías de Sonido Diseñadas por nosotros.</li>
+                <hr>
+                <li>Descarga de Canciones de nuestros Productores.</li>
+                <hr>
+                <li>Certificación Digital al culminar los 12 meses.</li>
+            </ul>
+            <div class="boton-principal boton-adquirir"><a href="https://go.hotmart.com/X94303272B?ap=d064">Adquirir</a></div>
+        </div>
+    </section>
+
+<!--TESTIMONIOS Y PRUEBAS CONTRA POSIBLES OBJESIONES-->
+
+    <!--<div class="testimonios">
+            <h2>Vea lo que algunos alumnos opinan de nuestra academia</h2>
+            <p>Ellos son personas como usted que han desidido dar un paso más adelante.</p>
+        </div>-->
+
+    <!--GARANTÍA-->    
+    <section class="objesiones contenedor">
+        <div class="garantia bloques-profes">
+            <img src="/img/garantia.png" alt="garantia">
+            <p>Estamos convencidos de que esta capacitación transformará tu desarrollo hacia una producción de nivel profesional. Aún así, si sientes que esto no es para tí, o prefieres dejar la producción de tu música en manos de terceros,
+                <br><b> Cuentas con 7 días de garantía de devolución </b><br>
+                Si no estas 100% satisfech@ sea por lo que fuere, contáctanos y nuestro equipo estará ahí 24/7 para atender tu solicitud y realizar el reembolso inmediato de tu inversión. Sin preguntas, sin demoras...</p>
+        </div>        
+    </section>
 </body>
 </html>
