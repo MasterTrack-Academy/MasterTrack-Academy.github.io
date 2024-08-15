@@ -6,17 +6,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MasterTrack</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P75NK2RFTB"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-P75NK2RFTB');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P75NK2RFTB');
     </script>
 </head>
 <body>
@@ -30,8 +30,8 @@
             <h1>Accede al Entrenamiento 2.0, <br> aprende a producir música de verdad.</h1>
             <p>¿Listo para entender de manera clara la producción musical? <b> Contáctate con nuestro soporte</b> para recibir atención personalizada y 
             accede a nuestro entrenamiento exclusivo.</p>
-            <a href="https://go.hotmart.com/X94303272B?ap=1a78"><div  class="boton-principal">Adquiera el entrenamiento ahora</div></a>
-            <a href="#contenido"><div class="boton-secundario">¿Qué voy a aprender?</div></a>
+            <a class="boton-principal" href="https://go.hotmart.com/X94303272B?ap=1a78"><div >Adquiera el entrenamiento ahora</div></a>
+            <a class="boton-secundario" href="#contenido"><div >¿Qué voy a aprender?</div></a>
             <a class="enlace" href="#precios">Ver precios y otros entrenamientos</a>
         </div> 
     </main>
@@ -45,7 +45,7 @@
     <section class="contenido contenedor" id="contenido">
         <h2>Contenido del Entrenamiento Avanzado 2.0</h2>
         <div class="navegacion">
-            <div class="boton-secundario"><a href="#CYP">Fundamentos y Teoría Musical</a></div>
+            <div class="boton-secundario"><a href="#FTM">Fundamentos y Teoría Musical</a></div>
             <div class="boton-secundario"><a href="#CYP">Creación y Producción</a></div>
             <div class="boton-secundario"><a href="#DAP">Desarrollo y Acompañamiento Profesional</a></div>
             <div class="boton-secundario"><a href="#FYC">Flexibilidad y Comunidad</a></div>
@@ -170,12 +170,13 @@
         <h2>Precios y Entrenamientos</h2>
         <div class="bloques-precios">
             <div class="encabezado-bloque">
-                <h2>Membresía Premium</h2>
-                <p>6 horas semanales</p>
+                <h2>Entrenamiento Avanzado</h2>
+                <p>Recomendado para quienes quieran
+                    profesionalizar su carrera musical</p>
             </div>
             <p class="precio">$69<span>USD/Mes</span></p>
             <ul>
-                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
+                <li>Acceso a todo el contenido grabado del entrenamiento Avanzado 2.0</li>
                 <hr>
                 <li>2 horas en vivo Sala de Juntas.</li>
                 <hr>
@@ -183,9 +184,7 @@
                 <hr>
                 <li>2 horas de CIRCULO INTERNO realizando tu Ep.</li>
                 <hr>
-                <li>Acceso a todo el contenido del entrenamiento Avanzado 2.0</li>
-                <hr>
-                <li>Curso en directo de la temporada lectiva con Certificación a los 12 meses.</li>
+                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
                 <hr>
                 <li>Publica tus canciones en nuestros sello Discográficos con nuestra tutoria.</li>
                 <hr>
@@ -201,18 +200,23 @@
         </div>
         <div class="bloques-precios">
             <div class="encabezado-bloque">
-                <h2>Membresía Standar</h2>
-                <p>4 horas semanales</p>
+                <h2>Entrenamiento Intermedio</h2>
+                <p>Recomendado para quienes
+                    ya tengan proyectos creados</p>
             </div>
-            <p class="precio">$44<span>USD/Mes</span></p>
-            <ul>
-                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
+            <p class="precio azul">$44<span>USD/Mes</span></p>
+            <ul  class="azul">
+                <li>Acceso a todo el contenido grabado del entrenamiento Avanzado 2.0</li>
                 <hr>
+                <li>2 horas en vivo Sala de Juntas.</li>
+                <hr>    
                 <li>2 horas en vivo Mentoría escucha de proyectos.</li>
                 <hr>
-                <li>2 horas de CIRCULO INTERNO realizando tu Ep.</li>
+                <li class="tachado">2 horas de CIRCULO INTERNO realizando tu Ep.</li>
                 <hr>
-                <li>Acceso a todo el contenido del entrenamiento Avanzado 2.0</li>
+                <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
+                <hr>
+                <li class="tachado">Publica tus canciones en nuestros sello Discográficos con nuestra tutoria.</li>
                 <hr>
                 <li>Soporte a dudas de lecciones y en los directos.</li>
                 <hr>
@@ -220,22 +224,29 @@
                 <hr>
                 <li>Descarga de Canciones de nuestros Productores.</li>
                 <hr>
-                <li>Certificación Digital al culminar los 12 meses.</li>
+                <li>Certificación Digital al culminar el entrenamiento a los 12 meses.</li>
             </ul>
-            <div class="boton-principal boton-adquirir"><a href="https://go.hotmart.com/X94303272B?ap=7433">Adquirir</a></div>
+            <div class="boton-principal boton-adquirir bgazul"><a href="https://go.hotmart.com/X94303272B?ap=7433">Adquirir</a></div>
         </div>
         <div class="bloques-precios">
             <div class="encabezado-bloque">
-                <h2>Membresía Básica</h2>
-                <p>2 horas semanales</p>
+                <h2>Entrenamiento Básico</h2>
+                <p>Recomendado para quienes
+                    empiezan de cero</p>
             </div>
-            <p class="precio">$19<span>USD/Mes</span></p>
-            <ul>
+            <p class="precio rojo">$19<span>USD/Mes</span></p>
+            <ul class="rojo">
+                <li>Acceso a todo el contenido grabado del entrenamiento Avanzado 2.0</li>
+                <hr>
+                <li>2 horas en vivo Sala de Juntas.</li>
+                <hr>
+                <li class="tachado">2 horas en vivo Mentoría escucha de proyectos.</li>
+                <hr>
+                <li class="tachado">2 horas de CIRCULO INTERNO realizando tu Ep.</li>
+                <hr>
                 <li>Comunidad Privada, aprende y comparte la mejor información con tus compañeros.</li>
                 <hr>
-                <li>2 horas de CIRCULO INTERNO realizando tu Ep.</li>
-                <hr>
-                <li>Acceso a todo el contenido del entrenamiento Avanzado 2.0</li>
+                <li class="tachado">Publica tus canciones en nuestros sello Discográficos con nuestra tutoria.</li>
                 <hr>
                 <li>Soporte a dudas de lecciones y en los directos.</li>
                 <hr>
@@ -243,18 +254,23 @@
                 <hr>
                 <li>Descarga de Canciones de nuestros Productores.</li>
                 <hr>
-                <li>Certificación Digital al culminar los 12 meses.</li>
+                <li class="tachado">Certificación Digital al culminar el entrenamiento a los 12 meses.</li>
             </ul>
-            <div class="boton-principal boton-adquirir"><a href="https://go.hotmart.com/X94303272B?ap=d064">Adquirir</a></div>
+            <div class="boton-principal boton-adquirir bgrojo"><a href="https://go.hotmart.com/X94303272B?ap=d064">Adquirir</a></div>
         </div>
     </section>
 
 <!--TESTIMONIOS Y PRUEBAS CONTRA POSIBLES OBJESIONES-->
 
-    <!--<div class="testimonios">
+    <div class="testimonios contenedor">
             <h2>Vea lo que algunos alumnos opinan de nuestra academia</h2>
             <p>Ellos son personas como usted que han desidido dar un paso más adelante.</p>
-        </div>-->
+            <div class="testimonios-videos">
+                <video src="/vid/testimonioDjMedina.mp4" controls></video>
+                <video src="/vid/testimonioHugoCristanacho.mp4" controls></video>
+                <video src="/vid/testimonioJorgeAlvarez.mp4" controls></video>
+            </div>
+        </div>
 
     <!--GARANTÍA-->    
     <section class="objesiones contenedor">
