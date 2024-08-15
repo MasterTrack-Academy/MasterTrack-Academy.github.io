@@ -6,6 +6,7 @@
     --color-cta2:#444b5d;
     --color-blanco:#FFFFFF;
     --color-azul:#2B99FF;
+    --color-rojo: #ff2a2a;
 }
 
 html{
@@ -50,7 +51,7 @@ p, li{
     padding: 1.5rem;
     border-radius: 1rem;
 }
-a{
+.boton-principal a{
     color: var(--color-blanco);
     font-family: "Roboto", sans-serif;
     text-decoration: none;
@@ -68,10 +69,17 @@ a{
     text-decoration: none;
     font-weight: 600;
 }
+a{
+    color: var(--color-blanco);
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
 .enlace{
     color: var(--color-blanco);
     font-weight: 600;
 }
+
 /*logo*/
 header img{
     height: 4rem;
@@ -229,6 +237,13 @@ video{
     list-style-image: url('../img/comprobado.png');
     margin: 3rem;
 }
+.bloques-precios .azul{
+    list-style-image: url('../img/comprobadoAzul.png');
+}
+.bloques-precios .rojo{
+    list-style-image: url(../img/comprobadoRojo.png);
+
+}
 .bloques-precios hr{
     width: 80%;
     margin: 1rem auto;
@@ -237,6 +252,50 @@ video{
 .boton-adquirir{
     width: 50%;
     margin: 3rem auto;
+}
+.tachado{
+    text-decoration: line-through;
+    list-style-image: url(../img/tachado.png);
+}
+.azul{
+    color: var(--color-azul);
+}
+.bgazul{
+    
+    background-color: var(--color-azul);
+}
+.rojo{
+    color: var(--color-rojo);
+}
+.bgrojo{
+    
+    background-color: var(--color-rojo);
+}
+
+/* TESTIMONIOS */
+.testimonios{
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.testimonios video{
+    margin: .2rem 0;
+    width: 97%;
+}
+.testimonios-videos{
+    padding: 0.4rem;
+}
+@media (min-width:760px){
+    .testimonios video{
+        width: 100%;
+    }
+    .testimonios-videos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
 }
 
 /* OBJESIONES */
