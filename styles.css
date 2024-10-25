@@ -8,7 +8,6 @@ h1{
 }
 h2{
     font-size: 26px;
-    margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -20,7 +19,7 @@ video{
     margin: 20px 0;
 }
 body{
-    background-color: rgb(248, 247, 245);
+    background-color: #adbc9d;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -29,10 +28,9 @@ main{
     align-items: center;
 }
 .conteiner{
-    background-color: #ffffff;
     width: 85%;
     margin: auto;
-    border-radius: 10px;
+    border-color: #adbc9d;
     box-shadow: 0px 2px 4px #e4e4e4;
     margin:30px auto;
 }
@@ -53,19 +51,20 @@ main{
 header{
     height: 64px;
     display: flex;
+    border: none;
     justify-content:space-around;
-    background-color: #ffffff;
+    background-color: #adbc9d;
     box-shadow: 0px 2px 4px #e4e4e4;
 }
 
 /* Galeria CTA */
 .galeria{
     text-align: center;
-    margin:0;
+    margin:20px 0;
     padding: 24px 0;
 }
 .cta{
-    background-color: #ff7c1e;
+    background-color: #28a745;
     color: #fff;
     padding: 10px 50px;
     border: none;
@@ -73,15 +72,15 @@ header{
     cursor: pointer;
     font-weight: 600;
     font-size: 24px;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 /* ¿Cómo transformará este curso tu carrera musical? */
 
 .beneficios{
-    background-color: #ffe1a2;
-    padding: 24px;
-    
+    background-color: #48553a;
+    padding: 40px 20px;
+    color: #ffffff;
 }
 
 @media (min-width:760px){
@@ -109,6 +108,9 @@ header{
 .artistas {
     margin: 24px;
 }
+.artistas h2{
+    margin-top: 0;
+}
 
 .artistas__conteiner{
     display: grid;
@@ -123,16 +125,24 @@ header{
 
 /* Analiza las preguntas */
 .preguntas{
-    margin: 24px;
-    padding: 6px 0;
+    background-color: #adbc9d;
+    color: #111;
+    padding: 40px 20px;
     text-align: center;
 }
+.preguntas h3{
+    margin: 22px 0 12px 0;
+}
+.preguntas a{
+    margin: 200px 0;
+}
 .pregunta{
+    background-color: #f1f1f1;
+    color: #111;
     align-items: center;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px rgb(158, 158, 158);
 }
 .preguntas__conteiner{
     margin: 10px 0;
@@ -151,7 +161,23 @@ header{
 }
 
 
+
+
 /* Contenido del curso */
+
+.contenedor_bloques{
+    margin: 20px 0;
+    background-color: #48553a;
+    padding: 24px 0;
+}
+.contenedor_bloques h2{
+    color: #f1f1f1;
+    margin: 10px 0;
+}
+.contenedor_bloques h3{
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
 
 .estructuraCurso{
     display: flex;
@@ -160,6 +186,7 @@ header{
     margin: 0 24px;
 }
 
+
 @media (min-width:720px){
 .estructuraCurso{
     display: grid;
@@ -167,9 +194,11 @@ header{
 }}
 
 .bloque {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    background-color:#adbc9d;
+    color: #111;
+    border: 1px solid #fafad8;
+    border-radius: 10px;
+    padding: 20px;
     margin: 10px 0;
     text-align: center;
     align-items: center;
@@ -178,19 +207,20 @@ header{
     max-width: 100%;
   }
   .bloque h2{
+    color: #111;
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 600;
   }
   .bloque h3{
+    color: #111;
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 400;
   }
   .bloque__ver{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    text-decoration: underline;
+    color: #323232;
     margin: 10px 0;
     cursor: pointer;
     font-weight: 600;
@@ -242,15 +272,14 @@ header{
 
 .empiezaHoy{
     text-align: center;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 0 24px;
+    padding: 24px;
 }
 .cta-descuento{
     display: inline-block;
-    background-color: #ff7c1e;
+    background-color: #28a745;
     color: #ffffff;
     padding: 15px 30px;
     font-size: 18px;
@@ -281,6 +310,15 @@ header{
         grid-template-columns: 1fr 1fr;
     }
 }
+.testimonios{
+    margin-bottom: 20;
+    background-color: #48553a;
+    padding: 20px;
+    
+}
+.testimonios h2{
+    color: #f1f1f1;
+}
 
 .testimonio{
     background-color: #f1f1f1;
@@ -292,6 +330,7 @@ header{
 }
 .testimonios h2{
     text-transform: uppercase;
+    margin-top: 0;
 }
 .testimonio img{
     height: 120px;
@@ -306,9 +345,10 @@ header{
 /* Garantía de satisfacción */
 
 .garantia{
-    background-color: #f1f1f1;
-    margin: 40px 0;
+    background-color: #48553a;
+    color: #f1f1f1;
     padding: 24px;
+    margin-top: 20px;
     text-align: center;
 }
 .garantia img{
@@ -323,9 +363,11 @@ header{
 /* Preguntas y respuestas */
 
 .faq-container {
-    width: 95%;
+    background-color: #48553a;
+    padding: 20px;
     margin: 0 auto;
     text-align: center;
+    color: #f1f1f1;
 }
 
 .faq {
@@ -337,7 +379,6 @@ header{
 
 .faq-question {
     cursor: pointer;
-    font-weight: bold;
     font-size: 20px;
 }
 
@@ -357,7 +398,7 @@ header{
     margin: 10px 0;
 }
 .profesor img {
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
 }
 @media (min-width:760px){
